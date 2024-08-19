@@ -1,0 +1,6 @@
+$imgLG: '/sass/logo.jpg';
+
+.logoHeader{
+    background-image: url('#{imgLG}');
+    background-size: cover;
+}

@@ -19,8 +19,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
-        use: ["style-loader", "css-loader"]
+        test: /\.(sc|c)ss$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(js|jsx)$/,
@@ -45,9 +45,9 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: path.join(__dirname, 'public', 'index.html')
     }),
-    // new MiniCssExtractPlugin({
-    //     filename: '[name].css',
-    //     chunkFilename: '[id].css',
-    // })
+    new MiniCssExtractPlugin({
+        filename: '[name].css',
+        chunkFilename: '[id].css',
+    })
   ]
 };

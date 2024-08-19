@@ -1,0 +1,47 @@
+
+*{
+    margin: 0px;
+    padding:0px;
+}.Component{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    .SearchComponent{
+        margin-left: 3%;
+        display:flex;
+        align-items: center;
+        padding:0px;
+    }
+    .LogoComponent{
+        display:flex;
+        align-items: center;
+        padding:0px;
+        width:8%;
+    }
+    .NavComponent{
+        padding:0px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .Component{
+        position:relative;
+        display: flex;
+        justify-content:space-around;
+    }
+    .NavComponent{
+        background-image: url(../../../../sass/logo.jpg);
+        width: 89px !important;
+        height: 100%;
+        position:absolute;
+        background-size: cover;
+    }
+    .LogoComponent{
+        position:relative;
+        right:12%;
+        bottom: 25%;
+    }
+    .SearchComponent{
+        right: 10% !important;
+    }
+  }

@@ -1,16 +1,24 @@
-import React from "react";
+import React from 'react'
+import './HeaderComponent.scss'
+import NavComponent from '../NavComponent/NavComponent.jsx'
+import SearchComponent from '../SearchComponent/SearchComponent.jsx'
+import LogoComponent from '../LogoComponent/LogoComponent.jsx'
 
-
-export default HeaderComponent = (props) => {
+const HeaderComponent = (props) => {
     
     return (
-      <div className="container ">
-        <div className="row align-items-center header-middle">
-            <button className="btn btn-primary"></button>
-            <h1>ashd</h1>
+      <div className="Component row">
+        <div className="LogoComponent col-1">
+          <LogoComponent/>
+        </div>
+        <div className="NavComponent col-8">
+          <NavComponent/>
+        </div>
+        <div className="SearchComponent col-2 ">
+          <SearchComponent/>
         </div>
       </div>
     )
   }
   
-
+export default HeaderComponent;
