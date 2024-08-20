@@ -3,7 +3,8 @@ import './HeaderComponent.scss'
 import NavComponent from '../NavComponent/NavComponent.jsx'
 import SearchComponent from '../SearchComponent/SearchComponent.jsx'
 import LogoComponent from '../LogoComponent/LogoComponent.jsx'
-import SubMenu from '../SubMenu/SubMenu.jsx'
+// import SubMenu from '../SubMenu/SubMenu.jsx'
+import Category from '../Category/Category.jsx'
 
 
 const HeaderComponent = (props) => {
@@ -33,13 +34,16 @@ const HeaderComponent = (props) => {
         <div className="SearchComponent col-2 ">
           <SearchComponent/>
         </div>
-        <div className ="">
+        {/* <div className ="">
           <SubMenu openMenu={openMenu}/>
-        </div>
-        <button className ="btn btn-primary" onClick={() => handleClick()}>ON CLICK</button>
-        <div className="IMG" onClick={() => handleClick()}>
+        </div> */}
+        {/* <button className ="btn btn-primary" onClick={() => handleClick()}>ON CLICK</button> */}
+        {/* <div className="IMG" onClick={() => handleClick()}>
           IMG
-        </div>
+        </div> */}
+        {/* <div>
+          <Category/>
+        </div> */}
       </div>
     )
   }

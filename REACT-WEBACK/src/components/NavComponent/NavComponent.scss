@@ -53,10 +53,17 @@
       font-size: 20px;
       color: rgb(255, 179, 0);
     }
+    .Cate{
+      display: none; 
+    }
   }
-li:hover a {
+li a:hover {
     color:rgb(255, 179, 0);
   }
+}
+.navbar .nav-links .Category:hover{
+ background-color: aqua;
+ display: block !important;
 }
 
 @media only screen and (max-width: 1200px) {
